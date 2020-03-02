@@ -1,5 +1,6 @@
 import bluetooth
 import time
+import sys
 import json
 #import RPi.GPIO as GPIO
 import adafruit_ssd1306
@@ -44,7 +45,7 @@ while True:
 		draw.text(str(addr))
 		
 		disp.image(image)
-		disp.display()
+		disp.show()
 		time.sleep(5)
 	
 	phase += 1
