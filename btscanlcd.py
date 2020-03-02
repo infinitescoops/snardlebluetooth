@@ -19,10 +19,10 @@ BORDER = 5
 
 disp = adafruit_ssd1306.SSD1306_SPI(WIDTH, HEIGHT, spi, dc_pin, reset_pin, cs_pin)
 
-oled.fill(0)
-oled.show()
+disp.fill(0)
+disp.show()
 
-image = Image.new('1', (oled.width, oled.height))
+image = Image.new('1', (disp.width, disp.height))
 
 draw = ImageDraw.Draw(image)
 
