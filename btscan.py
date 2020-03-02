@@ -30,7 +30,7 @@ def sendNotification():
 limit = readToleranceSetting() / 15
 
 # Scan for bluetooth devices
-devices = bluetooth.discover_devices()
+devices = bluetooth.discover_devices(duration = 10)
 
 # Record all addresses with a timestamp in CSV format
 with open('records.csv', 'a') as records:
