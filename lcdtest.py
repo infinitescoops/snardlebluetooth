@@ -4,9 +4,9 @@ import busio
 import digitalio
 
 spi = busio.SPI(board.SCK, MOSI=board.MOSI)
-reset_pin = digitalio.DigitalInOut(board.P24)
-cs_pin = digitalio.DigitalInOut(board.P8)
-dc_pin = digitalio.DigitalInOut(board.P23)
+reset_pin = digitalio.DigitalInOut(board.D24)
+cs_pin = digitalio.DigitalInOut(board.D8)
+dc_pin = digitalio.DigitalInOut(board.D23)
 
 oled = adafruit_ssd1306.SSD1306_SPI(128, 64, spi, dc_pin, reset_pin, cs_pin)
 
