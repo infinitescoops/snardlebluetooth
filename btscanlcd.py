@@ -35,7 +35,7 @@ while True:
 	draw.rectangle((BORDER, BORDER, disp.width - BORDER - 1, disp.height - BORDER -1), outline=0, fill=0)
 	draw.text((0, 24), "sacnning" + ellipsis, font = font, fill = 255)
 	disp.image(image)
-	disp.display()
+	disp.show()
 	
 	nearby_devices = bluetooth.discover_devices(duration=10, lookup_names=true)
 	
