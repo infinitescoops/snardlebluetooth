@@ -17,7 +17,7 @@ WIDTH = 128
 HEIGHT = 64
 BORDER = 5
 
-oled = adafruit_ssd1306.SSD1306_SPI(WIDTH, HEIGHT, spi, dc_pin, reset_pin, cs_pin)
+disp = adafruit_ssd1306.SSD1306_SPI(WIDTH, HEIGHT, spi, dc_pin, reset_pin, cs_pin)
 
 oled.fill(0)
 oled.show()
