@@ -42,7 +42,8 @@ while True:
 	print("found %d devices" % len(nearby_devices))
 	
 	for addr, name in nearby_devices:
-		draw.Text(str(name))
+		print("%name")
+		draw.Text("%addr")
 		
 		disp.image(image)
 		disp.show()
