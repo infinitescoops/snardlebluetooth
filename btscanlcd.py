@@ -33,7 +33,7 @@ phase = 0
 
 while True:
 	draw.rectangle((BORDER, BORDER, disp.width - BORDER - 1, disp.height - BORDER -1), outline=0, fill=0)
-	draw.text((0, 24), "sacnning" + ellipsis, font = font, fill = 255)
+	draw.text((0, 24), "scanning" + ellipsis, font = font, fill = 255)
 	disp.image(image)
 	disp.show()
 	
@@ -42,7 +42,7 @@ while True:
 	print("found %d devices" % len(nearby_devices))
 	
 	for addr, name in nearby_devices:
-		draw("name: %name")
+		draw.Text(str(name))
 		
 		disp.image(image)
 		disp.show()
