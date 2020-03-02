@@ -31,7 +31,7 @@ ellipsis = ".    "
 phase = 0
 
 while True:
-	draw.rectangle((BORDER, BORDER, oled.width - BORDER - 1, oled.height - BORDER -1), outline=0, fill=0)
+	draw.rectangle((BORDER, BORDER, disp.width - BORDER - 1, disp.height - BORDER -1), outline=0, fill=0)
 	draw.text((0, 24), "sacnning" + ellipsis, font = font, fill = 255)
 	disp.image(image)
 	disp.display()
