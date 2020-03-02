@@ -9,7 +9,11 @@ reset_pin = digitalio.DigitalInOut(board.D24)
 cs_pin = digitalio.DigitalInOut(board.D8)
 dc_pin = digitalio.DigitalInOut(board.D23)
 
-oled = adafruit_ssd1306.SSD1306_SPI(128, 64, spi, dc_pin, reset_pin, cs_pin)
+WIDTH = 128
+HEIGHT = 64
+BORDER = 5
+
+oled = adafruit_ssd1306.SSD1306_SPI(WDITH, HEIGHT, spi, dc_pin, reset_pin, cs_pin)
 
 oled.fill(0)
 oled.show()
