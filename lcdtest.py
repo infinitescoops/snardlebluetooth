@@ -2,6 +2,7 @@ import adafruit_ssd1306
 import board
 import busio
 import digitalio
+from PIL import Image, ImageDraw, ImageFont
 
 spi = busio.SPI(board.SCK, MOSI=board.MOSI)
 reset_pin = digitalio.DigitalInOut(board.D24)
