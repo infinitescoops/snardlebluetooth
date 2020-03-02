@@ -46,7 +46,7 @@ while True:
 		
 		disp.image(image)
 		disp.show()
-		time.sleep(5)
+		time.sleep(4)
 	
 	phase += 1
 	if phase == 1:
